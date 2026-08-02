@@ -1,21 +1,43 @@
 aid: tidalscale
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tidalscale.png
 name: TidalScale
-description: 'TidalScale is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai-infrastructure. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'TidalScale built software-defined server technology that aggregated the CPU, memory,
+  and I/O of multiple commodity servers into a single large virtual machine (an inverse hypervisor /
+  software-defined memory approach), enabling in-memory computing for very large workloads without
+  specialized hardware. The company was acquired by Hewlett Packard Enterprise (HPE) in early 2022,
+  and the tidalscale.com domain now redirects into HPE infrastructure (its TLS endpoint serves an
+  HPE certificate). This profile was surfaced as a portfolio company of Bain Capital Ventures and
+  enriched via the API Evangelist pipeline; TidalScale exposes no independent public developer API
+  surface today.'
 url: https://raw.githubusercontent.com/api-evangelist/tidalscale/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - bain-capital-ventures
+x-acquired-by: hewlett-packard-enterprise
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai Infrastructure
+- Server Virtualization
+- Software-Defined Infrastructure
+- In-Memory Computing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tidalscale-domain-security.yml
 - type: Website
   url: https://www.tidalscale.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
